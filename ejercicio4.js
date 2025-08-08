@@ -19,3 +19,16 @@ const mainCharacters = [
 
 console.log(findArrayIndex(mainCharacters, 'Anakin'));
 
+
+// 4.2
+function removeItem(array, text) {
+    const indexOfItem = findArrayIndex(array, text)
+
+        if(indexOfItem !== -1){  //para que pueda borrarse el 0 tambien
+            array.splice(indexOfItem, 1);
+        }
+
+    return array;
+}
+
+console.log(removeItem(mainCharacters, 'Luke'));
