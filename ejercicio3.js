@@ -40,7 +40,7 @@ function favoritesSounds(users) {
 
     for (let user of users) {
         for(let data in user.favoritesSounds) {
-            if (count[data]) {
+            if (count[data]) {                    //esto va verificando que no esté el mismo sonido y va agregando.
                 count[data] = count[data] + 1;
             } else {
                 count[data] = 1;
